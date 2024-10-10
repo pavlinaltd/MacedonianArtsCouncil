@@ -1,0 +1,826 @@
+body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+.main_wrapper {
+	position: relative;
+	top: 90px;
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 130px;
+}
+
+.size-23 {
+	width: 300px;
+	position: relative;
+	left: 200px;
+}
+.size-24 {
+	position: relative;
+	left: -60px;
+}
+.banner-bg {
+	background-image: url('../assets/images/banner-2.webp');
+	background-position: top;
+	height: 300px;
+}
+.btn-bdr {
+	border: 1px solid #d82126;
+}
+.btn-bg {
+	background: linear-gradient(0deg, #ffd034, #d82126);
+}
+.section-bg-gray {
+	background-color: #efefef;
+}
+.video-container {
+	position: relative;
+	padding-bottom: 40%; /* 16:9 aspect ratio */
+	padding-top: 30px;
+	height: 0;
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.responsive-iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.pulsate {
+	-webkit-animation: pulsate 3s ease-out;
+	-webkit-animation-iteration-count: infinite;
+	opacity: 0.7;
+}
+#published-container
+{
+	display: flex;
+	align-items: start;
+	justify-content: center;
+}
+#published-container .img1
+{
+	padding-right: 30px ;
+}
+#published-container .img2
+{
+	padding-left: 30px ;
+}
+
+
+#published-container .img1 img, #published-container .img2 img
+{
+	width: 400px;
+	height: 400px;
+}
+#published-container .published-txt
+{
+	
+	width: 450px;
+}
+
+
+
+#education-section{
+	display: flex;
+	margin: auto;
+	padding-top: 40px;
+	justify-content: space-between;
+	
+}
+#education-section .education-card:nth-child(2){
+	margin-right: 100px;
+	margin-left: 100px;
+}
+#buyaudio
+{
+	display: flex;
+	justify-content: center;
+}
+#contact_main_container
+{
+	display: flex;
+	justify-content: center;
+
+}
+#education_1_container
+{
+	display: flex;
+	justify-content: space-around; 
+	align-items: center;
+}
+
+#education_1_container div
+{
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+
+
+.img-thumbnail {
+	width: 300px; 
+	cursor: pointer;
+}
+
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1000;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.modal-content {
+	
+	margin: auto;
+	display: block;
+	width: 80%;
+	max-width: 800px;
+}
+
+
+.close {
+	position: absolute;
+	top: 10px;
+	right: 25px;
+	color: white;
+	font-size: 35px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+
+#colony_main_container
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+
+
+@-webkit-keyframes pulsate {
+	0% {
+		opacity: 0.7;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0.7;
+	}
+}
+@media screen and (max-width: 2000px) 
+{
+	#gala_img_1
+	{
+		width: 120% !important;
+	}
+
+}
+
+@media screen and (max-width: 1199px) {
+	.size-23 {
+		width: 300px;
+		position: relative;
+		left: 150px;
+	}
+	.size-24 {
+		position: relative;
+		left: -20px;
+	}
+	#education-section .education-card:nth-child(2){
+		margin-right: 0;
+		margin-left: 0;
+	}
+
+	#published-container
+	{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	#published-container .published-txt
+	{
+		padding: 15px;
+		width: 700px;
+	}
+	#published-container .img1 img, #published-container .img2 img
+	{
+		width: 450px;
+		height: 450px;
+	}
+	#published-container .img1
+	{
+		padding: 15px ;
+	}
+	#published-container .img2
+	{
+		padding: 15px ;
+	}
+	#gala_img_1
+	{
+		width: 90% !important;
+		
+	}
+
+	
+}
+@media screen and (max-width: 991px) {
+	#published-container .img1 img, #published-container .img2 img
+	{
+		width: 450px;
+		height: 450px;
+	}
+	.size-23 {
+		width: 300px;
+		position: relative;
+		left: 90px;
+	}
+	.size-24 {
+		position: relative;
+		left: 40px;
+	}
+
+	#published-container
+	{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	#education-section .education-card:nth-child(2){
+		margin-right: 0;
+		margin-left: 0;
+	}
+	#buyaudio
+	{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+	}
+	#published-container .published-txt
+	{
+		padding: 15px;
+		width: 700px;
+	}
+	#published-container .img1
+	{
+		padding: 15px ;
+	}
+	#published-container .img2
+	{
+		padding: 15px ;
+	}
+	#education_1_container
+	{
+	
+		flex-direction: column;
+	    align-items: center;
+		justify-content: center;
+	}
+	
+
+	#contact_main_container
+	{
+		flex-direction: column;
+		align-items: center;
+	}
+	#fundraising_gala_1
+	{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	#video_fundraising iframe
+	{
+		width: 100%;
+		height: auto;
+		
+	}
+	#fundraising_gala_1 div{
+		margin-bottom: 10px !important;
+		display: flex;
+		justify-content: center;
+	}
+	#gala_img_1
+	{
+		width: 90% !important;
+	}
+}
+@media screen and (max-width: 767px) {
+	.size-23 {
+		width: 300px;
+		position: relative;
+		left: 40px;
+	}
+	.size-24 {
+		position: relative;
+		left: 80px;
+	}
+
+	#published-container
+	{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#published-container .published-txt
+	{
+		
+		width: 500px;
+	}
+	#education-section
+	{
+		flex-direction: column;
+		align-items: center;
+	}
+	#education-section .education-card:nth-child(2){
+		margin-right: 0;
+		margin-left: 0;
+	}
+	#published-container .img1
+	{
+		padding: 15px ;
+	}
+	#published-container .img2
+	{
+		padding: 15px ;
+	}
+	#education_1_container
+	{
+		
+		flex-direction: column;
+	    align-items: center;
+		justify-content: center;
+	}
+	
+	
+	#contact_main_container
+	{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#fundraising_gala_1
+	{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	#video_fundraising iframe
+	{
+		width: 100%;
+		height: auto;
+		
+	}
+	#fundraising_gala_1 div{
+		margin-bottom: 10px !important;
+		display: flex;
+		justify-content: center;
+	}
+	#gala_img_1
+	{
+		width: 90% !important;
+	}
+	#Img_Cyril, #Img_fund
+	{
+		width: 80%;
+	}
+}
+@media screen and (max-width: 543px) {
+	.size-24 {
+		position: relative;
+		left: -110px;
+		top: 50px;
+	}
+
+	#published-container
+	{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#published-container .img1 img, #published-container .img2 img
+	{
+		width: 280px;
+		height: 280px;
+	}
+	#published-container .published-txt
+	{
+		padding: 15px;
+		width: 330px;
+	}
+
+	#education-section
+	{
+		flex-direction: column;
+		align-items: center;
+	}
+	#education-section .education-card:nth-child(2){
+		margin-right: 0;
+		margin-left: 0;
+	}
+
+	#published-container .img1
+	{
+		padding: 15px ;
+	}
+	#published-container .img2
+	{
+		padding: 15px ;
+	}
+	#education_1_container
+	{
+		display: flex;
+		flex-direction: column;
+	    align-items: center;
+		justify-content: center;
+	}
+	
+	#contact_main_container
+	{
+		flex-direction: column;
+		align-items: center;
+	}
+	#contact_main_container iframe
+	{
+		width: 300px;
+	}
+
+
+	#fundraising_gala_1
+	{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	#video_fundraising iframe
+	{
+		width: 100%;
+		height: auto;
+		
+	}
+	#fundraising_gala_1 div{
+		margin-bottom: 10px !important;
+		display: flex;
+		justify-content: center;
+	}
+	#video1_concert, #video2_concert
+	{
+		width: 99%;
+		height: auto;
+
+	}
+	#lilts_txt
+	{
+		margin-top: 30px;
+		margin-bottom: -30px; 
+	}
+	#gala_img_1
+	{
+		width: 80% !important;
+	}
+	#Img_Cyril, #Img_fund
+	{
+		width: 80%;
+	}
+		
+	
+	
+}
+.hover:hover {
+	color: grey;
+}
+
+.classof2014 {
+	display: flex;
+}
+
+@media (min-width: 1000px){
+	.classof14table tr td img{
+		display: block;
+	}
+	.classof14table{
+		width: 600px; text-align: center; border-collapse: collapse; table-layout: fixed;
+	}
+
+}
+
+@media (max-width: 750px){
+	.classof14header {
+		font-size: 11px;
+	}
+
+	#map-poster{
+		margin-right: 10px;
+	}
+
+	.buy-now {
+		flex-shrink: 1;
+	}
+
+	.book-cover-div{
+		display: block;
+	}
+	
+	.alphabet-bar{
+		width: 100%;
+	}
+
+	.monogram-container{
+		display: flex;
+		align-items: center;
+	}
+
+
+	.classof14table tr td img {
+		max-width: 100px;
+	}
+
+	
+
+	.classof14table tr td{
+		min-width: 200px;
+	}
+
+	.classof14table {
+		width: 100%;
+		height: 500px;
+	}
+
+	.youtube-vids {
+		width: 450px;
+	}
+
+	.classof14header{
+		height: 500px;
+		font-size: 5px;
+		padding: 2px;
+	}
+
+	.classof14table tr{
+		width: 100%;
+	}
+	
+	.treasure-column {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	#published-container
+	{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	#education_1_container
+	{
+		
+		flex-direction: column;
+	    align-items: center;
+		justify-content: center;
+	}
+	
+	
+	#contact_main_container
+	{
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+.classof14header {
+	padding: 30px;
+}
+
+
+
+
+.imgposition {
+	position: relative;
+	left: 47px;
+	top: -1px;
+}
+
+.add {
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	font-family: Lato, sans-serif;
+	background: #333;
+}
+
+.img5 {
+	height: 200px;
+}
+
+/*Dedicated to the promotion and affirmation
+of Macedonian cultural heritage. section*/
+.mable {
+	font-size: 26pt;
+}
+.dedicated {
+	position: relative;
+	top: -20px;
+}
+
+/*Our main objective is to introduce to people worldwide the rich traditions, language, literature, and art of a nation whose diverse cultural threads are interwoven into the ethnic tapestries of the world. section*/
+.pine {
+	font-size: 20pt;
+}
+/*Title img Arts hero image*/
+@media only screen and (min-width: 0px) {
+	.card-img-top {
+		position: relative;
+		z-index: 2;
+		height: auto;
+		width: auto;
+		transform: translateY(0);
+		transition: 0.5s;
+	}
+}
+
+@media only screen and (max-width: 995px) {
+	.mable {
+		font-size: 20pt;
+	}
+	.pine {
+		font-size: 15pt;
+	}
+}
+
+.mr-3 {
+	margin-bottom: 1rem;
+}
+
+
+  
+@media (max-width: 800px) {
+	.clothes-container {
+	  display: grid;
+	  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+	  gap: 10px;
+	  width: 100%;
+	  padding: 0 5px;
+	  margin-left: 100px;
+	}
+  
+	.art-row img {
+	  width: 100%;
+	  height: auto;
+	  margin-bottom: 5px;
+	}
+  }
+
+  @media (max-width: 750px) {
+	.monogram-container{
+		display:flex;
+		flex-direction: column;
+	}
+	.treasure-column {
+		max-width: 75%;
+	}
+
+	.treasure-column p{
+		font-size: 12px;
+	}
+
+	.pilgrimage-container{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+  }
+
+  .pilgrimage-container p{
+	font-size: 20px;
+  }
+
+  @media(max-width: 750px){
+	.contact-us {
+		display: flex;
+		align-self: center;
+	}
+	#doors_video
+	{
+		height: auto;
+	}
+  }
+
+.brief-descriptions {
+	font-size: 20px;
+	text-align: center;
+	font-weight: bold;
+}
+
+@media (max-width: 45em) {
+}
+ {
+	.pose {
+		position: relative;
+		top: -100px;
+	}
+}
+
+.heading-project {
+	margin: 24px 0;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+#poster {
+	object-position: bottom;
+	height: 450px;
+	object-fit: cover;
+	box-shadow: 0px 0px 10px 0px #888888;
+}
+
+.stack {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.stack > * {
+	margin: 1.5rem 0 0 0;
+}
+
+.stack > :last-child {
+	margin: 0 0 1.5rem 0;
+}
+
+.wrapper__cta {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.wrapper__cta > .button {
+	margin: auto;
+}
+
+.border__light {
+	border: 1px solid lightgray;
+}
+
+.btn {
+	border-radius: 100px;
+}
+
+.home-card-text p {
+	min-height: 225px;
+}
+
+.section__main {
+	position: relative;
+	top: 90px;
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 130px;
+}
+
+.wrapper__cards {
+	justify-content: center;
+}
+@media (max-width: 35em) {
+	.home-card-text p {
+		min-height: unset;
+	}
+
+	#poster {
+		height: unset;
+	}
+}
+
+.subheading_in-dev {
+	background-color: #efefef;
+	margin: auto;
+	padding: 0.5rem;
+}
+
+.object-fit-contain {
+	object-fit: contain !important;
+}
+ 
